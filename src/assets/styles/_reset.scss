@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: $body-color;
+}
+
+body {
+  font-size: 16px;
+}
+
+* {
+  font-family: Frutiger, sans-serif !important;
+}
+
+.xs {
+  h2 {
+    font-size: 1.3em;
+    margin: 0.6em 0;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  md-toolbar {
+    min-height: 48px;
+  }
+
+  .mat-toolbar-row {
+    height: 48px;
+  }
+}
+
+// fix icon generator bug
+span.bns-icon:before {
+  vertical-align: initial;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
