@@ -1,67 +1,16 @@
-<header>
-    <div>
-        <a [routerLink]="['/home']" class="logo">
-            <img src="../assets/images/deval-logo.png">
-        </a>
-    </div>
-    <nav>
-        <a [routerLink]="['/home']">Home</a>
-        <a [routerLink]="['/home']">Servicios</a>
-        <a>Nosotros</a>
-        <a>Contacto</a>
-    </nav>
-</header>
-
-<header id="topnav" class="defaultscroll fixed-top sticky">
-    <div class="container">
-        <!-- Logo container-->
-        <div>
+<div class="container">
+    <header class="d-flex flex-row">
+        <div class="p-2">
             <a [routerLink]="['/home']" class="logo">
                 <img src="../assets/images/deval-logo.png">
             </a>
         </div>
-        <!-- End Logo container-->
-        <div class="menu-extras">
-            <div class="menu-item">
-                <!-- Mobile menu toggle-->
-                <a class="navbar-toggle">
-                    <div class="lines">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </a>
-                <!-- End mobile menu toggle-->
-            </div>
-        </div>
-
-        <div id="navigation">
-            <!-- Navigation Menu-->
-            <ul class="navigation-menu">
-                <li class="has-submenu active">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="has-submenu">
-                    <a href="#services">Services</a>
-                </li>
-                <li class="has-submenu">
-                    <a href="#work">Work</a>
-                </li>
-                <li class="has-submenu">
-                    <a href="#pricing">Pricing</a>
-                </li>
-                <li class="has-submenu">
-                    <a href="#client">Client</a>
-                </li>
-                <li class="has-submenu">
-                    <a href="#about">About</a>
-                </li>
-                <li class="has-submenu">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <!-- End navigation menu-->
-        </div>
-    </div>
-</header>
-<router-outlet></router-outlet>
+        <nav class="p-4 nav nav-pills flex-column flex-sm-row justify-content-end">
+            <a class="nav-link active" [routerLink]="['/home']">Home</a>
+            <a class="nav-link" [routerLink]="['/home']">Servicios</a>
+            <a class="nav-link">Nosotros</a>
+            <a class="nav-link">Contacto</a>
+        </nav>
+    </header>
+    <router-outlet></router-outlet>
+</div>
