@@ -5,6 +5,19 @@
 //         display: inline-flex;
 //     }
 // }
+#mainHeader {
+    background-color: #1a3761;
+    .logo {
+        padding: 0 !important;
+        line-height: 0;
+        img {
+            font-size: 24px;
+            width: 130px;
+            height: 85px;
+        }
+    }
+}
+
 #topnav {
     z-index: 1030;
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
